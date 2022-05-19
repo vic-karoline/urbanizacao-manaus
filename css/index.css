@@ -1,0 +1,41 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}  
+
+/* Menu */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+li {
+    min-width: 1rem;
+}
+
+nav ul li::after {
+    content: '|';
+    margin-left: 5px;
+}
+
+nav ul li:last-child::after {
+    content: '';
+}
